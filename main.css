@@ -22,9 +22,13 @@ a.neutral-link{
   color:#fff;
 }
 
+.blue{
+  color: #34c1db;
+}
+
 .title{
   font-weight:700;
-  font-size:22px;
+  font-size:34px;
 }
 
 .space{
@@ -119,18 +123,58 @@ a.neutral-link{
 .resume-left-content{
   display: block;
   position:relative;
-  z-index: 2;
+  background:#34c1db;
+  width:80%;
+  padding:60px;
+  border-radius:20px;
 }
 
-.resume-left-content:before{
-  content:'';
-  display: block;
-  position:absolute;
-  width:400px;
-  height:400px;
-  background:#118498;
-  border-radius:30px;
-  z-index: 1;
+.resume{
+  position: relative;
 }
 
+.resume-left-content  .description{
+  font-size:20px;
+  width: 50%;
+}
+
+.resume-right-content{
+  display: flex;
+  width: 450px;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  color:rgb(71, 71, 71);
+  font-size:30px;
+  right:0;
+  bottom:30px;
+  position: absolute;
+  background: #fff;
+  box-shadow: -2px 5px 13px rgba(0, 0, 0, 0.15);
+  border-radius:20px;
+}
+
+.resume-right-content .description{
+  text-align: center;
+  font-weight: 600;
+}
 /* #resume */
+
+/* chapters */
+
+.chapters-section{
+  padding:80px 0px;
+}
+
+.chapters-section .chapter-descriptio .icon{
+  background: #1ebbd7;
+  height: 40px;
+  width:40pc;
+  border-radius: 3px;
+}
+
+.chapters-section .chapter-descriptio{
+
+}
+
+/* #chapters  */
