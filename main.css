@@ -69,11 +69,52 @@ a.neutral-link{
   width: 100%;
 }
 
+@keyframes monkey{
+  0%{
+    stroke-dashoffset:-2000;
+  }
+  50%{
+    stroke:red;
+  }
+  100%{
+    stroke-dashoffset:0;
+    stroke:purple;
+  }
+}
+
+.wave1{
+  stroke:green;
+  stroke-width:2px;
+  stroke-dashoffset:0;
+  stroke-dasharray:2000;
+  stroke-dashoffset:-2000;
+  animation-name: monkey;
+  animation-duration: 2s;
+  animation-iteration-count:infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode:fowards;
+}
+
+
 /* navbar */
 .navbar{
   width:100%;
   display:flex;
-  margin-top:40px;
+  padding-top:40px;
+  position: static;
+  top:0;
+  background: #fff;
+  z-index: 9999;
+}
+
+.navbar.sticky{
+  width:100%;
+  display:flex;
+  padding-top:0px;
+  position: sticky;
+  top:0;
+  z-index: 9999;
 }
 
 .navbar .logo img{
@@ -165,7 +206,7 @@ a.neutral-link{
 
 #navigator{
   position: absolute;
-  right: 0;
+  right: -20px;
   top:30%;
   transform:translateY(0px);
   animation-name: movenavigator;
@@ -175,23 +216,65 @@ a.neutral-link{
   animation-direction: alternate;
 }
 
-#nuvens{
+#navio{
+  width:580px;
+}
+
+#clouds-container{
   width: 400px;
+  position: absolute;
+  right: -20px;
+  top:10%;
+}
+
+@keyframes moveCloud {
+  0%{
+   left: 200px;
+   opacity: 0.3;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    left:-200px;
+    opacity: 0;
+  }
+}
+
+#clouds{
+  position: absolute;
+  width:220px;
+  opacity: 0;
+  left: 300px;
+  animation-name: moveCloud;
+  animation-delay: 1s;
+  animation-iteration-count:infinite;
+  animation-duration: 10s;
+  animation-direction: normal;
 }
 
 #waves{
   width: 600px;
   right: 0;
-  bottom:-200px;
+  bottom:-100px;
   position: absolute;
 }
 
 @keyframes moveWave1 {
   from {
-    left:-50px;
+    left:0px;
   }
   to {
-    left:100px;
+    left:150px;
+  }
+}
+
+@keyframes moveWave2 {
+  from {
+    left:80px;
+  }
+  to {
+    left:280px;
   }
 }
 
@@ -207,10 +290,11 @@ a.neutral-link{
 }
 
 #wave2{
-  width:100%;
+  width:60%;
   position: relative;
-  left:0px;
-  animation-name: moveWave1;
+  margin-top:40px;
+  left:50px;
+  animation-name: moveWave2;
   animation-delay: 3s;
   animation-iteration-count:infinite;
   animation-duration: 4s;
@@ -434,6 +518,10 @@ footer .social-icons ul li{
     width: 100%;
   }
 
+  .princing-section{
+    margin-top: 0;
+  }
+
   .mobile-menu{
     display: block;
   }
@@ -551,5 +639,8 @@ footer .social-icons ul li{
     text-align: justify;
   }
   
+  .containers-vector{
+    display:none;
+  }
 
 }
