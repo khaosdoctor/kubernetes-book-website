@@ -217,7 +217,7 @@ a.neutral-link{
 }
 
 #navio{
-  width:580px;
+  width:440px;
 }
 
 #clouds-container{
@@ -254,34 +254,34 @@ a.neutral-link{
 }
 
 #waves{
-  width: 600px;
-  right: 0;
-  bottom:-100px;
+  width: 380px;
+  right: 40px;
+  bottom:-20px;
   position: absolute;
 }
 
 @keyframes moveWave1 {
   from {
-    left:0px;
+    left:-20px;
   }
   to {
-    left:150px;
+    left:80px;
   }
 }
 
 @keyframes moveWave2 {
   from {
-    left:80px;
+    left:20px;
   }
   to {
-    left:280px;
+    left:180px;
   }
 }
 
 #wave1{
   width:100%;
   position: relative;
-  left:0px;
+  left:-20px;
   animation-name: moveWave1;
   animation-delay: 2s;
   animation-iteration-count:infinite;
@@ -559,11 +559,11 @@ footer .social-icons ul li{
   }
 
   #navigator svg{
-    width: 300px;
+    width: 220px;
   }
 
   #waves{
-    width: 300px;
+    width: 220px;
     right: 70px;
     bottom:-180px;
     position: absolute;
