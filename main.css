@@ -19,6 +19,11 @@ a.neutral-link{
   cursor:pointer;
 }
 
+.neutral-link:hover{
+  transform:translateY(-2px);
+  transition: transform 0.3s ease-out;
+}
+
 .white{
   color:#fff;
 }
