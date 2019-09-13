@@ -557,21 +557,33 @@ footer .social-icons ul li{
     bottom: -250px;
   }
 
+  #navigator-container{
+    margin-top: 120px;
+  }
+
   #navigator{
     bottom: 0;
-    left:10px;
+    left:50px;
     margin-top: 50px;
   }
 
-  #navigator svg{
+  #navigator #navio{
     width: 220px;
+  }
+
+  #clouds{
+    width:140px;
   }
 
   #waves{
     width: 220px;
     right: 70px;
-    bottom:-180px;
     position: absolute;
+  }
+
+  #wave2{
+    margin-top:20px;
+    left:20px;
   }
   
   .mobile-menu{
