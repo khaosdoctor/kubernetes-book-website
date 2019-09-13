@@ -578,6 +578,7 @@ footer .social-icons ul li{
   #waves{
     width: 220px;
     right: 70px;
+    bottom:-40px;
     position: absolute;
   }
 
