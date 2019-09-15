@@ -8,16 +8,15 @@
   <title>Kubernetes - tudo sobre orquestração de contêiners</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./all.css">
   <link rel="stylesheet" href="./main.css">
 </head>
 <body>
   <!-- Wrapper -->
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <!-- Navbar  -->
-        <div class="navbar " id="navbar">
+   <!-- Navbar  -->
+   <div class="navbar container" id="navbar">
+
           <div class="logo">
             <img src="./assets/logo.png" alt="">
           </div>
@@ -36,7 +35,7 @@
               </li>
             </ul>
           </div>
-
+      
           <div class="mobile-menu">
               <div class="menu-icon" id="toggle-menu">
                 <div class="line"></div>
@@ -59,10 +58,13 @@
               </li>
             </ul>
           </aside>
-        </div>
-        <!-- #Navbar  -->
+  </div>
+  <!-- #Navbar  -->
+  <div class="container">
+    <div class="row">
+      <div class="col">
         <!-- home content -->
-        <div class="home">
+        <div class="home parallax">
          <div class="row">
            <div class="col">
              <div class="home-content">
@@ -75,17 +77,17 @@
                </a>
               <div id="navigator-container">
                 <div id="clouds-container">
-                  <img src="./assets/clouds.svg" id="clouds" alt="">
+                  <img src="./assets/clouds.svg" id="clouds" alt="imagem de nuvens">
                 </div>
                 <div id="navigator">
-                  <img src="./assets/navigator-1.svg" id="navio" alt="">
+                  <img src="./assets/navigator-1.svg" id="navio" alt="imagem de um navio">
                 </div>
                 <div id="waves">
-                  <img src="./assets/wave-1.svg" alt="" id="wave1">
-                  <img src="./assets/wave-2.svg" alt="" id="wave2" >
+                  <img src="./assets/wave-1.svg" alt="ondas" id="wave1">
+                  <img src="./assets/wave-2.svg" alt="ondas" id="wave2" >
                 </div>
               </div>
-                <a href="https://www.casadocodigo.com.br/products/livro-kubernetes" target="_blank"class="buy-button">
+                <a  data-aos="fade-right" href="https://www.casadocodigo.com.br/products/livro-kubernetes" target="_blank"class="buy-button">
                   <div class="button blue">
                       Comprar 
                   </div>
@@ -93,11 +95,19 @@
              </div>
            </div>
          </div>
+         <a href="#resume" class="text-center" data-scrol id="scroll-icon">
+          <div class="scroll-downs">
+            <div class="mousey">
+              <div class="scroller"></div>
+            </div>
+          </div>
+        </a>
         </div>
         <!-- #home content -->
         <!-- Resume -->
         <div class="resume" id="resume">
-          <div class="resume-left-content">
+          <div class="resume-left-content" data-aos="fade-right" data-aos-duration="600"
+          data-aos-easing="ease-in-out">
             <div class="title white">
               Sinopse
             </div>
@@ -107,7 +117,8 @@
             </div>
           </div>
 
-          <div class="resume-right-content">
+          <div class="resume-right-content" data-aos="fade-left" data-aos-duration="900"
+          data-aos-easing="ease-in-out">
             <div class="description">
               Infraestrutura rápida, escalável, gerenciável e reproduzível com  
                <span class="blue">Kubernetes.</span>
@@ -119,13 +130,14 @@
         <div class="chapters-section" id="chapters">
           <div class="row">
             <div class="col">
-              <div class="title">Spoilers</div>
+              <div class="title" data-aos="fade-left">Spoilers</div>
             </div>
           </div>
           <div class="space md"></div>
           <div class="row">
             <div class="col">
-              <div class="chapter-description">
+              <div class="chapter-description" data-aos="zoom-out-up" data-aos-duration="200"
+              data-aos-easing="ease-in-out">
                 <div class="icon">
                   <img src="./assets/data-sharing.png" alt="">
                   <div class="cap-title">
@@ -137,11 +149,12 @@
                 </div>
               </div>
 
-              <div class="chapter-description">
+              <div class="chapter-description" data-aos="zoom-out-up" data-aos-duration="400"
+              data-aos-easing="ease-in-out">
                 <div class="icon">
                     <img src="./assets/data.png" alt="">
                     <div class="cap-title">
-                        2. Hands on!
+                        4. Hands on!
                     </div>
                 </div>
                 <div class="description">
@@ -151,11 +164,12 @@
 
             </div>
             <div class="col">
-              <div class="chapter-description">
+              <div class="chapter-description" data-aos="zoom-out-up" data-aos-duration="600"
+              data-aos-easing="ease-in-out">
                 <div class="icon">
                     <img src="./assets/cloud-storage.png" alt="">
                     <div class="cap-title">
-                        3. Kubernetes de verdade
+                        2. Kubernetes de verdade
                     </div>
                 </div>
                 <div class="description">
@@ -164,11 +178,12 @@
               </div>
             </div>
             <div class="col">
-              <div class="chapter-description">
+              <div class="chapter-description" data-aos="zoom-out-up" data-aos-duration="800"
+              data-aos-easing="ease-in-out">
                 <div class="icon">
                     <img src="./assets/hosting.png" alt="">           
                     <div class="cap-title">
-                        4. Apêndice
+                        3. Apêndice
                     </div>       
                 </div>
                 <div class="description">
@@ -180,7 +195,8 @@
         </div>
         <!-- #Chapters -->
         <!-- about me  -->
-        <div class="about-me" id="about-me">
+        <div class="about-me" id="about-me" data-aos="fade-left" data-aos-duration="500"
+        data-aos-easing="ease-in-out">
           <div class="profile-container">
             <img src="./assets/profile.jpg" alt="">
           </div>
@@ -197,12 +213,13 @@
     </div>
   </div>
       <!-- pricing -->
-      <div class="princing-section" id="pricing">
-          <img src="./assets/containers.svg" class="containers-vector" alt="containers">
+      <div class="princing-section" id="pricing" class="parallax">
+          <img src="./assets/containers.svg"  class="containers-vector" alt="containers">
         <div class="container">
           <div class="row">
             <div class="col">
-                <div class="header-content">
+                <div class="header-content" data-aos="fade-right" data-aos-duration="300"
+                data-aos-easing="ease-in-out">
                   <div class="title">
                       Preços disponíveis. Vamos lá só um vai...
                   </div>
@@ -213,7 +230,8 @@
                 <div class="space md"></div>
                 <div class="row">
                   <div class="col">
-                    <div class="pricing-cards">
+                    <div class="pricing-cards" data-aos="zoom-out-up" data-aos-duration="300"
+                    data-aos-easing="ease-in-out">
                         <div class="icon">
                           <img src="./assets/ebook.svg" alt=""height="100px" >
                         </div>
@@ -224,7 +242,8 @@
                     </div>
                   </div>
                   <div class="col">
-                    <div class="pricing-cards">
+                    <div class="pricing-cards" data-aos="zoom-out-up" data-aos-duration="600"
+                    data-aos-easing="ease-in-out">
                         <div class="icon">
                           <img src="./assets/open-book.svg" height="100px" alt="">
                         </div>
@@ -235,7 +254,8 @@
                       </div>
                   </div>
                   <div class="col">
-                    <div class="pricing-cards">
+                    <div class="pricing-cards" data-aos="zoom-out-up" data-aos-duration="900"
+                    data-aos-easing="ease-in-out">
                       <div class="icon">
                         <img src="./assets/ebookandbook.png" height="100px" alt="">
                       </div>
@@ -255,10 +275,11 @@
         <div class="container">
           <div class="row">
             <div class="col">
-                <div>
+                <div data-aos="zoom-out-up" data-aos-duration="600"
+                data-aos-easing="ease-in-out">
                     <div class="section text-center">
                       <div class="phrase">
-                        Lorem ipsum dolor sit amet consectetur illum ex nostrum laudantium eos doloremque ad rerum 
+                        O Kubernetes combina os 15 anos de experiência do Google com contêineres em produção, combinados com as melhores ideias e práticas da comunidade!
                       </div>
                       <div class="space md"></div>
                       <a href="https://www.casadocodigo.com.br/products/livro-kubernetes" target="_blank">
@@ -349,6 +370,8 @@
    </div>
   </footer>
   <!-- #Wrapper -->
+  <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.0.2/dist/simpleParallax.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="./smooth-scroll.polyfills.min.js"></script>
   <script src="./main.js"></script>
 </body>

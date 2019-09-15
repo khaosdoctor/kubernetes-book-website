@@ -105,12 +105,16 @@ a.neutral-link{
 /* navbar */
 .navbar{
   width:100%;
-  display:flex;
   padding-top:40px;
   position: static;
   top:0;
   background: #fff;
   z-index: 9999;
+  display:flex;
+}
+
+div{
+outline:1px solid yellow;
 }
 
 .navbar.sticky{
@@ -126,6 +130,10 @@ a.neutral-link{
   height: 40px;
   margin-top: -20px;
 }
+
+/* .navbar .navbar-content{
+  flex:1;
+} */
 
 .navbar .navbar-content ul{
   list-style: none;
@@ -511,6 +519,53 @@ footer .social-icons ul li{
   margin-left: 20px;
 }
 
+/* Scroll */
+
+.scroll-downs {
+  position: absolute;
+  left:50%;
+  bottom:100px;
+  margin: auto;
+  width :24px;
+  cursor:pointer;
+  height: 45px;
+}
+.mousey {
+  width: 3px;
+  padding: 6px 11px;
+  height: 35px;
+  border: 2px solid #1d1d1d;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+.scroller {
+  width: 3px;
+  height: 6px;
+  border-radius: 25%;
+  background-color: #1ebbd7;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% { opacity: 0; }
+  10% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(15px); opacity: 0;}
+}
+
+@media(max-width:768px){
+  .scroll-downs{
+    position: static;
+    padding: 20px 0px;
+  }
+
+  .mousey{
+    height: 28px;
+  }
+}
+
 /* #footer*/
 
 @media(max-width:768px){
@@ -536,11 +591,12 @@ footer .social-icons ul li{
   }
 
   .home{
-    height:80vh;
+    height:auto;
+    margin-bottom: 60px;
   }
 
   .home-content{
-    margin-top: 20px;
+    margin-top: 40px;
   }
 
   .home-title{
@@ -553,17 +609,19 @@ footer .social-icons ul li{
 
   .buy-button{
     display: block;
-    position: relative;
-    bottom: -250px;
+    position: static;
+    margin: 20px 0px;
   }
 
   #navigator-container{
-    margin-top: 120px;
+    margin-top: -40px;
+    position: relative;
+    height: 290px;
   }
 
   #navigator{
     bottom: 0;
-    left:50px;
+    left:30px;
     margin-top: 50px;
   }
 
@@ -573,12 +631,13 @@ footer .social-icons ul li{
 
   #clouds{
     width:140px;
+    top:20%;
   }
 
   #waves{
-    width: 220px;
-    right: 70px;
-    bottom:-40px;
+    width: 200px;
+    left: 0px;
+    bottom:0px;
     position: absolute;
   }
 
