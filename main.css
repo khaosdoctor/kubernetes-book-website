@@ -3,6 +3,8 @@
 body{
   font-family: 'Ubuntu', sans-serif;
   font-weight:300;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 a{
@@ -19,8 +21,8 @@ a.neutral-link{
   cursor:pointer;
 }
 
-.neutral-link:hover{
-  transform:translateY(-2px);
+.neutral-link:hover i{
+  transform:translateX(6px);
   transition: transform 0.3s ease-out;
 }
 
@@ -113,14 +115,10 @@ a.neutral-link{
   display:flex;
 }
 
-div{
-outline:1px solid yellow;
-}
-
 .navbar.sticky{
   width:100%;
   display:flex;
-  padding-top:0px;
+  padding-top:20px;
   position: sticky;
   top:0;
   z-index: 9999;
@@ -648,6 +646,7 @@ footer .social-icons ul li{
   
   .mobile-menu{
     display: block;
+    z-index: 999;
   }
   .mobile-menu-options.open{
     transition: all 0.5 ease-in; 
@@ -662,7 +661,8 @@ footer .social-icons ul li{
     height:100vh;
     overflow-y: scroll;
     right:-100%;
-    top:120px;
+    top:70px;
+    padding-top: 20px;
     transition: all 0.5 ease-in; 
   }
 

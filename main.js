@@ -27,3 +27,10 @@ menuButton.addEventListener("click", (e) => {
 })
 
 AOS.init();
+
+
+document.addEventListener('click', function (event) {
+	if (!event.target.matches('.link')) return;
+  event.preventDefault();
+  menuOptions.classList.toggle("open")
+}, false);
