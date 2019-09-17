@@ -9,23 +9,30 @@
     content="Um livro escrito por Lucas Santos, onde você verá como o Kubernetes faz todo o processo de automação, sendo responsável por criar os contêineres, gerenciar seu funcionamento, manter a infraestrutura em estado de execução e administrar o estado ideal do cluster.">
   <title>Kubernetes - tudo sobre orquestração de contêiners</title>
   <!-- Search Engine -->
-  <meta name="image" content="https://cdn.shopify.com/s/files/1/0155/7645/products/p_b8ba43f3-0f4b-4774-b5c0-119e3fb1f12f_large.jpg?v=1566593170">
+  <meta name="image"
+    content="https://cdn.shopify.com/s/files/1/0155/7645/products/p_b8ba43f3-0f4b-4774-b5c0-119e3fb1f12f_large.jpg?v=1566593170">
   <!-- Schema.org for Google -->
   <meta itemprop="name" content="Kubernetes - Tudo sobre orquestração de contêineres">
-  <meta itemprop="description" content="Um livro escrito por Lucas Santos, onde você verá como o Kubernetes faz todo o processo de automação, sendo responsável por criar os contêineres, gerenciar seu funcionamento, manter a infraestrutura em estado de execução e administrar o estado ideal do cluster.">
-  <meta itemprop="image" content="https://cdn.shopify.com/s/files/1/0155/7645/products/p_b8ba43f3-0f4b-4774-b5c0-119e3fb1f12f_large.jpg?v=1566593170">
+  <meta itemprop="description"
+    content="Um livro escrito por Lucas Santos, onde você verá como o Kubernetes faz todo o processo de automação, sendo responsável por criar os contêineres, gerenciar seu funcionamento, manter a infraestrutura em estado de execução e administrar o estado ideal do cluster.">
+  <meta itemprop="image"
+    content="https://cdn.shopify.com/s/files/1/0155/7645/products/p_b8ba43f3-0f4b-4774-b5c0-119e3fb1f12f_large.jpg?v=1566593170">
   <!-- Twitter -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Kubernetes - Tudo sobre orquestração de contêineres">
-  <meta name="twitter:description" content="Um livro escrito por Lucas Santos, onde você verá como o Kubernetes faz todo o processo de automação, sendo responsável por criar os contêineres, gerenciar seu funcionamento, manter a infraestrutura em estado de execução e administrar o estado ideal do cluster.">
+  <meta name="twitter:description"
+    content="Um livro escrito por Lucas Santos, onde você verá como o Kubernetes faz todo o processo de automação, sendo responsável por criar os contêineres, gerenciar seu funcionamento, manter a infraestrutura em estado de execução e administrar o estado ideal do cluster.">
   <meta name="twitter:site" content="@_staticvoid">
   <meta name="twitter:creator" content="@_staticvoid">
-  <meta name="twitter:image:src" content="https://cdn.shopify.com/s/files/1/0155/7645/products/p_b8ba43f3-0f4b-4774-b5c0-119e3fb1f12f_large.jpg?v=1566593170">
+  <meta name="twitter:image:src"
+    content="https://cdn.shopify.com/s/files/1/0155/7645/products/p_b8ba43f3-0f4b-4774-b5c0-119e3fb1f12f_large.jpg?v=1566593170">
   <!-- Twitter - Product (e-commerce) -->
   <!-- Open Graph general (Facebook, Pinterest & Google+) -->
   <meta name="og:title" content="Kubernetes - Tudo sobre orquestração de contêineres">
-  <meta name="og:description" content="Um livro escrito por Lucas Santos, onde você verá como o Kubernetes faz todo o processo de automação, sendo responsável por criar os contêineres, gerenciar seu funcionamento, manter a infraestrutura em estado de execução e administrar o estado ideal do cluster.">
-  <meta name="og:image" content="https://cdn.shopify.com/s/files/1/0155/7645/products/p_b8ba43f3-0f4b-4774-b5c0-119e3fb1f12f_large.jpg?v=1566593170">
+  <meta name="og:description"
+    content="Um livro escrito por Lucas Santos, onde você verá como o Kubernetes faz todo o processo de automação, sendo responsável por criar os contêineres, gerenciar seu funcionamento, manter a infraestrutura em estado de execução e administrar o estado ideal do cluster.">
+  <meta name="og:image"
+    content="https://cdn.shopify.com/s/files/1/0155/7645/products/p_b8ba43f3-0f4b-4774-b5c0-119e3fb1f12f_large.jpg?v=1566593170">
   <meta name="og:url" content="https://tudosobrekubernetes.tech">
   <meta name="og:site_name" content="Kubernetes - Tudo sobre orquestração de contêineres">
   <meta name="og:locale" content="pt_BR">
@@ -37,62 +44,63 @@
   <meta name="product:brand" content="Lucas Santos">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./all.css">
   <link rel="stylesheet" href="./main.css?v=1">
 </head>
 
 <body>
   <!-- Wrapper -->
+  <!-- Navbar  -->
+  <div class="navbar container" id="navbar">
+    <div class="logo">
+      <img src="./assets/lucas-santos_logo-colorido.png" alt="">
+    </div>
+    <div class="navbar-content">
+      <ul>
+        <li><a data-scroll href="#resume">Sinopse</a></li>
+        <li><a data-scroll href="#about-me">Autor</a></li>
+        <li><a data-scroll href="#chapters">Capítulos</a></li>
+        <li><a data-scroll href="#pricing">Preços</a></li>
+        <li>
+          <a href="https://www.casadocodigo.com.br/products/livro-kubernetes" target="_blank">
+            <div class="button blue">
+              Comprar
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="mobile-menu">
+      <div class="menu-icon" id="toggle-menu">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </div>
+    <aside id="menu-options" class="mobile-menu-options">
+      <ul>
+        <li><a class="link" data-scroll href="#resume">Sinopse</a></li>
+        <li><a class="link" data-scroll href="#about-me">Autor</a></li>
+        <li><a class="link" data-scroll href="#chapters">Capítulos</a></li>
+        <li><a class="link" data-scroll href="#pricing">Preços</a></li>
+        <li>
+          <a href="https://www.casadocodigo.com.br/products/livro-kubernetes" target="_blank">
+            <div class="button blue">
+              Comprar
+            </div>
+          </a>
+        </li>
+      </ul>
+    </aside>
+  </div>
+  <!-- #Navbar  -->
   <div class="container">
     <div class="row">
       <div class="col">
-        <!-- Navbar  -->
-        <div class="navbar " id="navbar">
-          <div class="logo">
-            <img src="./assets/lucas-santos_logo-colorido.png" alt="Lucas Santos Logo">
-          </div>
-          <div class="navbar-content">
-            <ul>
-              <li><a data-scroll href="#resume">Sinopse</a></li>
-              <li><a data-scroll href="#about-me">Autor</a></li>
-              <li><a data-scroll href="#chapters">Capítulos</a></li>
-              <li><a data-scroll href="#pricing">Preços</a></li>
-              <li>
-                <a href="https://www.casadocodigo.com.br/products/livro-kubernetes" target="_blank">
-                  <div class="button blue">
-                    Comprar
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="mobile-menu">
-            <div class="menu-icon" id="toggle-menu">
-              <div class="line"></div>
-              <div class="line"></div>
-              <div class="line"></div>
-            </div>
-          </div>
-          <aside id="menu-options" class="mobile-menu-options">
-            <ul>
-              <li><a class="link" data-scroll href="#resume">Sinopse</a></li>
-              <li><a class="link" data-scroll href="#about-me">Autor</a></li>
-              <li><a class="link" data-scroll href="#chapters">Capítulos</a></li>
-              <li><a class="link" data-scroll href="#pricing">Preços</a></li>
-              <li>
-                <a href="https://www.casadocodigo.com.br/products/livro-kubernetes" target="_blank">
-                  <div class="button blue">
-                    Comprar
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </aside>
-        </div>
-        <!-- #Navbar  -->
         <!-- home content -->
-        <div class="home">
+        <div class="home parallax">
           <div class="row">
             <div class="col">
               <div class="home-content">
@@ -106,17 +114,18 @@
                 </a>
                 <div id="navigator-container">
                   <div id="clouds-container">
-                    <img src="./assets/clouds.svg" id="clouds" alt="">
+                    <img src="./assets/clouds.svg" id="clouds" alt="imagem de nuvens">
                   </div>
                   <div id="navigator">
-                    <img src="./assets/navigator-1.svg" id="navio" alt="">
+                    <img src="./assets/navigator-1.svg" id="navio" alt="imagem de um navio">
                   </div>
                   <div id="waves">
-                    <img src="./assets/wave-1.svg" alt="" id="wave1">
-                    <img src="./assets/wave-2.svg" alt="" id="wave2">
+                    <img src="./assets/wave-1.svg" alt="ondas" id="wave1">
+                    <img src="./assets/wave-2.svg" alt="ondas" id="wave2">
                   </div>
                 </div>
-                <a href="https://www.casadocodigo.com.br/products/livro-kubernetes" target="_blank" class="buy-button">
+                <a data-aos="fade-right" href="https://www.casadocodigo.com.br/products/livro-kubernetes"
+                  target="_blank" class="buy-button">
                   <div class="button blue">
                     Comprar
                   </div>
@@ -124,11 +133,18 @@
               </div>
             </div>
           </div>
+          <a href="#resume" class="text-center" data-scrol id="scroll-icon">
+            <div class="scroll-downs">
+              <div class="mousey">
+                <div class="scroller"></div>
+              </div>
+            </div>
+          </a>
         </div>
         <!-- #home content -->
         <!-- Resume -->
         <div class="resume" id="resume">
-          <div class="resume-left-content">
+          <div class="resume-left-content" data-aos="fade-right" data-aos-duration="600" data-aos-easing="ease-in-out">
             <div class="title white">
               Sinopse
             </div>
@@ -144,7 +160,7 @@
             </div>
           </div>
 
-          <div class="resume-right-content">
+          <div class="resume-right-content" data-aos="fade-left" data-aos-duration="900" data-aos-easing="ease-in-out">
             <div class="description">
               Infraestrutura rápida, escalável, gerenciável e reproduzível com <span class="blue">Kubernetes</span>
             </div>
@@ -153,75 +169,69 @@
         <!-- #Resume -->
         <!-- Chapters -->
         <div class="chapters-section" id="chapters">
-          <div class="container">
-
-            <div class="row">
-              <div class="col">
-                <div class="title">Spoilers</div>
-              </div>
+          <div class="row">
+            <div class="col">
+              <div class="title" data-aos="fade-left">Spoilers</div>
             </div>
-            <div class="space md"></div>
-            <div class="row">
-              <div class="col">
-                <div class="chapter-description">
-                  <div class="icon">
-                    <img src="./assets/data-sharing.png" alt="">
-                    <div class="cap-title">
-                      1. Um pouco de conceito
-                    </div>
-                  </div>
-                  <div class="description">
-                    Com um pouco de história, vamos entender o que são monólitos e microsserviços, e por que precisamos
-                    do
-                    <span class="blue"><strong>Kubernetes</strong></span>
+          </div>
+          <div class="space md"></div>
+          <div class="row">
+            <div class="col">
+              <div class="chapter-description" data-aos="zoom-out-up" data-aos-duration="200"
+                data-aos-easing="ease-in-out">
+                <div class="icon">
+                  <img src="./assets/data-sharing.png" alt="">
+                  <div class="cap-title">
+                    1. Um pouco de conceito
                   </div>
                 </div>
+                <div class="description">
+                  Com um pouco de história, vamos entender o que são monólitos e microsserviços, e por que precisamos do
+                  Kubernetes.
+                </div>
+              </div>
 
-              </div>
-              <div class="col">
-                <div class="chapter-description">
-                  <div class="icon">
-                    <img src="./assets/data.png" alt="">
-                    <div class="cap-title">
-                      2. Hands on!
-                    </div>
-                  </div>
-                  <div class="description">
-                    Vamos criar nosso ambiente e nosso cluster <span class="blue"><strong>Kubernetes</strong></span>
-                    passo
-                    a passo nos principais provedores cloud e também localmente!
+            </div>
+            <div class="col">
+              <div class="chapter-description" data-aos="zoom-out-up" data-aos-duration="600"
+                data-aos-easing="ease-in-out">
+                <div class="icon">
+                  <img src="./assets/cloud-storage.png" alt="">
+                  <div class="cap-title">
+                    2. Kubernetes de verdade
                   </div>
                 </div>
+                <div class="description">
+                  Vamos entrar fundo em Kubernetes e todos os seus conceitos, explorando minuciosamente todas as partes
+                  desta ferramenta.
+                </div>
               </div>
-              <div class="col">
-                <div class="chapter-description">
-                  <div class="icon">
-                    <img src="./assets/cloud-storage.png" alt="">
-                    <div class="cap-title">
-                      3. Kubernetes de verdade
-                    </div>
+
+              <div class="chapter-description" data-aos="zoom-out-up" data-aos-duration="400"
+                data-aos-easing="ease-in-out">
+                <div class="icon">
+                  <img src="./assets/data.png" alt="">
+                  <div class="cap-title">
+                    4. Hands on!
                   </div>
-                  <div class="description">
-                    Vamos entrar fundo em <span class="blue"><strong>Kubernetes</strong></span> e todos os seus
-                    conceitos,
-                    explorando minuciosamente todas as partes desta ferramenta.
-                  </div>
+                </div>
+                <div class="description">
+                  Vamos criar nosso ambiente e nosso cluster Kubernetes passo a passo nos principais provedores cloud e
+                  também localmente!
                 </div>
               </div>
             </div>
-
-            <div class="row justify-content-center">
-              <div class="col-4">
-                <div class="chapter-description">
-                  <div class="icon">
-                    <img src="./assets/hosting.png" alt="">
-                    <div class="cap-title">
-                      4. Apêndice
-                    </div>
+            <div class="col">
+              <div class="chapter-description" data-aos="zoom-out-up" data-aos-duration="800"
+                data-aos-easing="ease-in-out">
+                <div class="icon">
+                  <img src="./assets/hosting.png" alt="">
+                  <div class="cap-title">
+                    3. Apêndice
                   </div>
-                  <div class="description">
-                    Guias de comandos para referência rápida e links para aprendizado contínuo!
-                  </div>
+                </div>
+                <div class="description">
+                  Guias de comandos para referência rápida e links para aprendizado contínuo!
                 </div>
               </div>
             </div>
@@ -230,7 +240,7 @@
         </div>
         <!-- #Chapters -->
         <!-- about me  -->
-        <div class="about-me" id="about-me">
+        <div class="about-me" id="about-me" data-aos="fade-left" data-aos-duration="500" data-aos-easing="ease-in-out">
           <div class="profile-container">
             <img src="./assets/profile.jpg" alt="">
           </div>
@@ -338,36 +348,43 @@
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <!-- #pricing -->
-  <!-- Call to action -->
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <div>
-          <div class="section text-center">
-            <div class="phrase">
-              O Kubernetes combina os 15 anos de experiência do Google com contêineres em produção, combinados com as
-              melhores ideias e práticas da comunidade!
-            </div>
-            <div class="space md"></div>
-            <a href="https://www.casadocodigo.com.br/products/livro-kubernetes" target="_blank">
-              <div class="button blue">
-                Comprar
+      <!-- #pricing -->
+      <!-- Call to action -->
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div data-aos="zoom-out-up" data-aos-duration="600" data-aos-easing="ease-in-out">
+              <div class="section text-center">
+                <div class="phrase">
+                  O Kubernetes combina os 15 anos de experiência do Google com contêineres em produção, combinados com
+                  as melhores ideias e práticas da comunidade!
+                </div>
+                <div class="space md"></div>
+                <a href="https://www.casadocodigo.com.br/products/livro-kubernetes" target="_blank">
+                  <div class="button blue">
+                    Comprar
+                  </div>
+                </a>
               </div>
-            </a>
+            </div>
           </div>
+          <div class="space md"></div>
+          <a href="https://www.casadocodigo.com.br/products/livro-kubernetes" target="_blank">
+            <div class="button blue">
+              Comprar
+            </div>
+          </a>
         </div>
       </div>
     </div>
+  </div>
   </div>
   <!-- #call to action  -->
   <footer>
     <div class="container">
       <div class="row">
         <div class="logo">
-          <img src="./assets/lucas-santos_logo-colorido.png" alt="">
+          <img src="./assets/logo.png" alt="logo icone">
         </div>
         <div class="menu-options">
           <ul>
@@ -402,7 +419,7 @@
 
             <li>
               <!-- facebook -->
-              <a target="_blank" href="https://github.com/khaosdoctor">
+              <a target="_blank" href="https://lsantos.dev">
                 <i class=" black fas fa-link fa-2x"></i>
               </a>
             </li>
@@ -412,6 +429,8 @@
     </div>
   </footer>
   <!-- #Wrapper -->
+  <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.0.2/dist/simpleParallax.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="./smooth-scroll.polyfills.min.js"></script>
   <script src="./main.js"></script>
 </body>

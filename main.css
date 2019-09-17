@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap');
-
 body {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 300;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 a {
@@ -19,8 +20,8 @@ a.neutral-link {
   cursor: pointer;
 }
 
-.neutral-link:hover {
-  transform: translateY(-2px);
+.neutral-link:hover i {
+  transform: translateX(6px);
   transition: transform 0.3s ease-out;
 }
 
@@ -82,11 +83,9 @@ a.neutral-link {
   0% {
     stroke-dashoffset: -2000;
   }
-
   50% {
     stroke: red;
   }
-
   100% {
     stroke-dashoffset: 0;
     stroke: purple;
@@ -112,18 +111,18 @@ a.neutral-link {
 
 .navbar {
   width: 100%;
-  display: flex;
   padding-top: 40px;
   position: static;
   top: 0;
   background: #fff;
   z-index: 9999;
+  display: flex;
 }
 
 .navbar.sticky {
   width: 100%;
   display: flex;
-  padding-top: 0px;
+  padding-top: 20px;
   position: sticky;
   top: 0;
   z-index: 9999;
@@ -133,6 +132,11 @@ a.neutral-link {
   height: 80px;
   margin-top: -20px;
 }
+
+
+/* .navbar .navbar-content{
+  flex:1;
+} */
 
 .navbar .navbar-content ul {
   list-style: none;
@@ -208,11 +212,9 @@ a.neutral-link {
   0% {
     transform: translateY(0px);
   }
-
   50% {
     transform: translateY(-10px);
   }
-
   100% {
     transform: translateY(0px);
   }
@@ -246,11 +248,9 @@ a.neutral-link {
     left: 200px;
     opacity: 0.3;
   }
-
   50% {
     opacity: 1;
   }
-
   100% {
     left: -200px;
     opacity: 0;
@@ -280,7 +280,6 @@ a.neutral-link {
   from {
     left: -20px;
   }
-
   to {
     left: 80px;
   }
@@ -290,7 +289,6 @@ a.neutral-link {
   from {
     left: 20px;
   }
-
   to {
     left: 180px;
   }
@@ -541,78 +539,136 @@ footer .social-icons ul li {
 }
 
 
+/* Scroll */
+
+.scroll-downs {
+  position: absolute;
+  left: 50%;
+  bottom: 100px;
+  margin: auto;
+  width: 24px;
+  cursor: pointer;
+  height: 45px;
+}
+
+.mousey {
+  width: 3px;
+  padding: 6px 11px;
+  height: 35px;
+  border: 2px solid #1d1d1d;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+
+.scroller {
+  width: 3px;
+  height: 6px;
+  border-radius: 25%;
+  background-color: #1ebbd7;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(.15, .41, .69, .94);
+  animation-iteration-count: infinite;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+}
+
+@media(max-width:768px) {
+  .scroll-downs {
+    position: static;
+    padding: 20px 0px;
+  }
+  .mousey {
+    height: 28px;
+  }
+}
+
+
 /* #footer*/
 
 @media(max-width:768px) {
   .button {
     width: 100%;
   }
-
   .princing-section .header-content {
     margin-left: 0;
     width: 100%;
   }
-
   .princing-section {
     margin-top: 0;
   }
-
   .mobile-menu {
     display: block;
   }
-
   .mobile-menu-options {
     display: block;
   }
-
   .home {
-    height: 80vh;
+    height: auto;
+    margin-bottom: 60px;
   }
-
   .home-content {
-    margin-top: 20px;
+    margin-top: 40px;
   }
-
   .home-title {
     font-size: 40px;
   }
-
   .home-content .neutral-link {
     display: none;
   }
-
   .buy-button {
     display: block;
-    position: relative;
-    bottom: -250px;
+    position: static;
+    margin: 20px 0px;
   }
-
+  #navigator-container {
+    margin-top: -40px;
+    position: relative;
+    height: 290px;
+  }
   #navigator {
     bottom: 0;
-    left: 10px;
+    left: 30px;
     margin-top: 50px;
   }
-
-  #navigator svg {
+  #navigator #navio {
     width: 220px;
   }
-
+  #clouds {
+    width: 140px;
+    top: 20%;
+  }
   #waves {
-    width: 220px;
-    right: 70px;
-    bottom: -180px;
+    width: 200px;
+    left: 0px;
+    bottom: 0px;
     position: absolute;
   }
-
+  #wave2 {
+    margin-top: 20px;
+    left: 20px;
+  }
   .mobile-menu {
     display: block;
+    z-index: 999;
   }
-
   .mobile-menu-options.open {
     transition: all 0.5 ease-in;
     right: 0;
   }
-
   .mobile-menu-options {
     position: fixed;
     z-index: 9;
@@ -621,62 +677,51 @@ footer .social-icons ul li {
     height: 100vh;
     overflow-y: scroll;
     right: -100%;
-    top: 120px;
+    top: 70px;
+    padding-top: 20px;
     transition: all 0.5 ease-in;
   }
-
   .mobile-menu-options ul {
     list-style: none;
     padding: 20px;
   }
-
   .mobile-menu-options ul li a.link {
     padding: 20px;
     display: block;
     font-size: 24px;
   }
-
   .navbar-content {
     display: none;
   }
-
-  .resume-left-content,
-  .resume-left-content .description {
+  .resume-left-content, .resume-left-content .description {
     width: 100%;
     font-size: 16px;
     text-align: justify;
   }
-
   .resume-left-content {
     padding: 20px;
   }
-
   .resume-right-content {
     width: 100%;
     position: static;
     margin-top: 20px;
   }
-
   .about-me {
     padding: 20px;
     display: block;
     text-align: center;
   }
-
   .about-me .profile-container {
     text-align: center;
     margin-bottom: 20px;
   }
-
   .about-me .title {
     text-align: center;
   }
-
   .about-me .description-container {
     margin-left: 0;
     text-align: justify;
   }
-
   .containers-vector {
     display: none;
   }
