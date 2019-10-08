@@ -124,7 +124,7 @@ a.neutral-link {
   width: 100%;
   max-width:100%;
   display: flex;
-  padding-top: 20px;
+  padding-top: 40px;
   position: sticky;
   top: 0;
   z-index: 9999;
@@ -684,7 +684,7 @@ footer .social-icons ul li {
     height: 100vh;
     overflow-y: scroll;
     right: -100%;
-    top: 90px;
+    top: 120px;
     padding-top: 20px;
     transition: all 0.5 ease-in;
   }
