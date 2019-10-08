@@ -2,15 +2,9 @@ const menuButton = document.getElementById("toggle-menu")
 const menuOptions = document.getElementById("menu-options")
 const menu = document.getElementById("navbar");
 const sticky = menu.offsetTop;
-const containerVector = document.getElementsByClassName('parallax');
-// new simpleParallax(containerVector, {
-// 	delay: .6,
-// 	transition: 'cubic-bezier(0,0,0,1)'
-// });
 
 var scroll = new SmoothScroll('a[href*="#"]', {
   easing: 'easeInOutCubic',
-  // header: ['class="navbar"']
 });
 
 const fixMenu = () => {
