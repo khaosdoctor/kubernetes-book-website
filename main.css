@@ -673,16 +673,18 @@ footer .social-icons ul li {
   .mobile-menu-options.open {
     transition: all 0.5 ease-in;
     right: 0;
+    position: absolute;
   }
   .mobile-menu-options {
     position: fixed;
     z-index: 9;
     width: 100%;
+    max-width: 100%;
     background: #fafafa;
     height: 100vh;
     overflow-y: scroll;
     right: -100%;
-    top: 70px;
+    top: 90px;
     padding-top: 20px;
     transition: all 0.5 ease-in;
   }
