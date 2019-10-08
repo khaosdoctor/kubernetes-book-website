@@ -111,6 +111,7 @@ a.neutral-link {
 
 .navbar {
   width: 100%;
+  max-width:100%;
   padding-top: 40px;
   position: static;
   top: 0;
@@ -121,6 +122,7 @@ a.neutral-link {
 
 .navbar.sticky {
   width: 100%;
+  max-width:100%;
   display: flex;
   padding-top: 20px;
   position: sticky;
@@ -296,6 +298,7 @@ a.neutral-link {
 
 #wave1 {
   width: 100%;
+  max-width:100%;
   position: relative;
   left: -20px;
   animation-name: moveWave1;
@@ -409,6 +412,7 @@ a.neutral-link {
   padding: 80px 40px;
   border-radius: 20px;
   width: 100%;
+  max-width:100%;
   display: flex;
   justify-content: space-around;
 }
@@ -485,6 +489,7 @@ a.neutral-link {
 footer {
   background-color: #f7f7f7;
   width: 100%;
+  max-width:100%;
   padding: 20px;
   display: flex;
   flex-wrap: nowrap;
