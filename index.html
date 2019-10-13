@@ -62,24 +62,26 @@
 <body>
   <!-- Wrapper -->
   <!-- Navbar  -->
-  <div class="navbar container" id="navbar">
-    <div class="logo">
-      <img src="./assets/lucas-santos_logo-colorido.png" alt="">
+  <div class="navbar" id="navbar">
+    <div class="container">
+      <div class="logo">
+        <img src="./assets/lucas-santos_logo-colorido.png" alt="">
+      </div>
+      <div class="navbar-content">
+        <ul>
+          <li><a data-scroll href="#resume">Sinopse</a></li>
+          <li><a data-scroll href="#about-me">Autor</a></li>
+          <li><a data-scroll href="#chapters">Capítulos</a></li>
+          <li><a data-scroll href="#pricing">Preços</a></li>
+          <li>
+            <a href="https://www.casadocodigo.com.br/products/livro-kubernetes" target="_blank">
+              <div class="button blue">
+                Comprar
+              </div>
+            </a>
+          </li>
+        </ul>
     </div>
-    <div class="navbar-content">
-      <ul>
-        <li><a data-scroll href="#resume">Sinopse</a></li>
-        <li><a data-scroll href="#about-me">Autor</a></li>
-        <li><a data-scroll href="#chapters">Capítulos</a></li>
-        <li><a data-scroll href="#pricing">Preços</a></li>
-        <li>
-          <a href="https://www.casadocodigo.com.br/products/livro-kubernetes" target="_blank">
-            <div class="button blue">
-              Comprar
-            </div>
-          </a>
-        </li>
-      </ul>
     </div>
 
     <div class="mobile-menu">
@@ -360,36 +362,36 @@
         </div>
       </div>
       <!-- #pricing -->
-      <!-- Call to action -->
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <div data-aos="zoom-out-up" data-aos-duration="600" data-aos-easing="ease-in-out">
-              <div class="section text-center">
-                <div class="phrase">
-                  O Kubernetes combina os 15 anos de experiência do Google com contêineres em produção, combinados com
-                  as melhores ideias e práticas da comunidade!
-                </div>
-                <div class="space md"></div>
-                <a href="https://www.casadocodigo.com.br/products/livro-kubernetes" target="_blank">
-                  <div class="button blue">
-                    Comprar
-                  </div>
-                </a>
-              </div>
+    </div>
+  </div>
+</div>
+<!-- Call to action -->
+<div class="container">
+    <div class="row">
+      <div class="col">
+        <div data-aos="zoom-out-up" data-aos-duration="600" data-aos-easing="ease-in-out">
+          <div class="section text-center">
+            <div class="phrase">
+              O Kubernetes combina os 15 anos de experiência do Google com contêineres em produção, combinados com
+              as melhores ideias e práticas da comunidade!
             </div>
+            <div class="space md"></div>
+            <a href="https://www.casadocodigo.com.br/products/livro-kubernetes" target="_blank">
+              <div class="button blue">
+                Comprar
+              </div>
+            </a>
           </div>
         </div>
       </div>
     </div>
-  </div>
   </div>
   <!-- #call to action  -->
   <footer>
     <div class="container">
       <div class="row">
         <div class="logo">
-          <img src="./assets/logo.png" alt="logo icone">
+          <img src="./assets/logo.png" alt="logo icone" style="height: 40px;margin-top:10px">
         </div>
         <div class="menu-options">
           <ul>
@@ -433,6 +435,9 @@
       </div>
     </div>
   </footer>
+    <div class="copyright text-center">
+      Desenvolvido por: <b><a href="https://twitter.com/laislima_dev" target="_blank">Laís Lima</a></b> 
+    </div>
   <!-- #Wrapper -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="./smooth-scroll.polyfills.min.js"></script>

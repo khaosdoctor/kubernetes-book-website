@@ -274,7 +274,7 @@ a.neutral-link {
 #waves {
   width: 380px;
   right: 40px;
-  bottom: -20px;
+  bottom: -50px;
   position: absolute;
 }
 
@@ -591,6 +591,16 @@ footer .social-icons ul li {
   }
 }
 
+.copyright{
+  padding:10px 0px;
+  background: #222222;
+  color:#fff;
+}
+
+.copyright a{
+  color:#fff;
+}
+
 @media(max-width:768px) {
   .scroll-downs {
     position: static;
@@ -611,6 +621,7 @@ footer .social-icons ul li {
   .princing-section .header-content {
     margin-left: 0;
     width: 100%;
+    margin-bottom: 100px;
   }
   .princing-section {
     margin-top: 0;
@@ -669,6 +680,9 @@ footer .social-icons ul li {
   .mobile-menu {
     display: block;
     z-index: 999;
+    position: absolute;
+    right: 20px;
+    top: 40px;
   }
   .mobile-menu-options.open {
     transition: all 0.5 ease-in;
@@ -731,5 +745,14 @@ footer .social-icons ul li {
   }
   .containers-vector {
     display: none;
+  }
+}
+
+@media(min-width:1024px){
+  .home-title {
+    font-size:90px;
+  }
+  #waves{
+    margin-bottom:-60px;
   }
 }
