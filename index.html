@@ -73,16 +73,21 @@
       <div class="navbar-content">
         <ul>
           <li><a data-scroll href="#resume"
-              onclick="ga('send', 'event', 'navigation', 'click', 'Sinopse - Navbar');">Sinopse</a></li>
+              onclick="gtag('event', 'click', {'event_category': 'navigation', 'event_label': 'Sinopse - Navbar'});">Sinopse</a>
+          </li>
           <li><a data-scroll href="#about-me"
-              onclick="ga('send', 'event', 'navigation', 'click', 'Autor - Navbar');">Autor</a></li>
+              onclick="gtag('event', 'click', {'event_category': 'navigation', 'event_label': 'Autor - Navbar'});">Autor</a>
+          </li>
           <li><a data-scroll href="#chapters"
-              onclick="ga('send', 'event', 'navigation', 'click', 'Capítulos - Navbar');">Capítulos</a></li>
+              onclick="gtag('event', 'click', {'event_category': 'navigation', 'event_label': 'Capítulos - Navbar'});">Capítulos</a>
+          </li>
           <li><a data-scroll href="#pricing"
-              onclick="ga('send', 'event', 'navigation', 'click', 'Preços - Navbar');">Preços</a></li>
+              onclick="gtag('event', 'click', {'event_category': 'navigation', 'event_label': 'Preços - Navbar'});">Preços</a>
+          </li>
           <li>
             <a href="https://www.casadocodigo.com.br/products/livro-kubernetes"
-              onclick="ga('send', 'event', 'buy', 'click', 'Navbar');" target="_blank">
+              onclick="gtag('event', 'view_item', {'event_category': 'purchase', 'event_label': 'Navbar'});"
+              target="_blank">
               <div class="button blue">
                 Comprar
               </div>
@@ -102,16 +107,21 @@
     <aside id="menu-options" class="mobile-menu-options">
       <ul>
         <li><a class="link" data-scroll href="#resume"
-            onclick="ga('send', 'event', 'navigation', 'click', 'Sinopse - Navbar Mobile');">Sinopse</a></li>
+            onclick="gtag('event', 'click', {'event_category': 'navigation', 'event_label': 'Sinopse - Mobile Navbar'});">Sinopse</a>
+        </li>
         <li><a class="link" data-scroll href="#about-me"
-            onclick="ga('send', 'event', 'navigation', 'click', 'Autor - Navbar Mobile');">Autor</a></li>
+            onclick="gtag('event', 'click', {'event_category': 'navigation', 'event_label': 'Autor - Mobile Navbar'});">Autor</a>
+        </li>
         <li><a class="link" data-scroll href="#chapters"
-            onclick="ga('send', 'event', 'navigation', 'click', 'Capítulos - Navbar Mobile');">Capítulos</a></li>
+            onclick="gtag('event', 'click', {'event_category': 'navigation', 'event_label': 'Capítulos - Mobile Navbar'});">Capítulos</a>
+        </li>
         <li><a class="link" data-scroll href="#pricing"
-            onclick="ga('send', 'event', 'navigation', 'click', 'Preços - Navbar Mobile');">Preços</a></li>
+            onclick="gtag('event', 'click', {'event_category': 'navigation', 'event_label': 'Preços - Mobile Navbar'});">Preços</a>
+        </li>
         <li>
           <a href="https://www.casadocodigo.com.br/products/livro-kubernetes"
-            onclick="ga('send', 'event', 'buy', 'click', 'Mobile Navbar');" target="_blank">
+            onclick="gtag('event', 'click', {'event_category': 'purchase', 'event_label': 'Mobile Navbar'});"
+            target="_blank">
             <div class="button blue">
               Comprar
             </div>
@@ -134,7 +144,8 @@
                 </h1>
                 <div class="space sm"></div>
                 <a class="neutral-link" href="https://www.casadocodigo.com.br/products/livro-kubernetes"
-                  onclick="ga('send', 'event', 'buy', 'click', 'Header Desktop');" target="_blank">Comprar
+                  onclick="gtag('event', 'click', {'event_category': 'purchase', 'event_label': 'Header Desktop'});"
+                  target="_blank">Comprar
                   livro
                   <i class="fas fa-long-arrow-alt-right"></i>
                 </a>
@@ -151,7 +162,8 @@
                   </div>
                 </div>
                 <a data-aos="fade-right" href="https://www.casadocodigo.com.br/products/livro-kubernetes"
-                  onclick="ga('send', 'event', 'buy', 'click', 'Header Mobile');" target="_blank" class="buy">
+                  onclick="gtag('event', 'click',{'event_category': 'purchase', 'event_label': 'Mobile Header'});"
+                  target="_blank" class="buy">
                   <div class="button blue">
                     Comprar
                   </div>
@@ -287,32 +299,38 @@
               <div class="container">
                 <div class="social-icons row justify-content-left">
                   <div class="col-1">
-                    <a href="https://lsantos.dev" onclick="ga('send', 'event', 'social', 'click', 'Personal Site');"
+                    <a href="https://lsantos.dev"
+                      onclick="gtag('event', 'click', {'event_category': 'social', 'event_label': 'Personal Site'});"
                       target="_blank">
                       <i class="white fas fa-lg fa-link"></i></a>
                   </div>
                   <div class="col-1">
                     <a href="https://twitter.com/_staticvoid"
-                      onclick="ga('send', 'event', 'social', 'click', 'Twitter');" target="_blank">
+                      onclick="gtag('event', 'click', {'event_category': 'social', 'event_label': 'Twitter'});"
+                      target="_blank">
                       <i class="white fab fa-lg fa-twitter-square"></i></a>
                   </div>
                   <div class="col-1">
-                    <a href="https://fb.com/lsantos.dev" onclick="ga('send', 'event', 'social', 'click', 'Facebook');"
+                    <a href="https://fb.com/lsantos.dev"
+                      onclick="gtag('event', 'click', {'event_category': 'social', 'event_label': 'Facebook'});"
                       target="_blank">
                       <i class="white fab fa-lg fa-facebook-square"></i></a>
                   </div>
                   <div class="col-1">
                     <a href="https://linkedin.com/in/lhs-santos"
-                      onclick="ga('send', 'event', 'social', 'click', 'LinkedIn');" target="_blank">
+                      onclick="gtag('event', 'click', {'event_category': 'social', 'event_label': 'LinkedIn'});"
+                      target="_blank">
                       <i class="white fab fa-lg fa-linkedin"></i></a>
                   </div>
                   <div class="col-1">
-                    <a href="https://github.com/khaosdoctor" onclick="ga('send', 'event', 'social', 'click', 'GitHub');"
+                    <a href="https://github.com/khaosdoctor"
+                      onclick="gtag('event', 'click', {'event_category': 'social', 'event_label': 'GitHub'});"
                       target="_blank">
                       <i class="white fab fa-lg fa-github"></i></a>
                   </div>
                   <div class="col-1">
-                    <a href="https://dev.to/khaosdoctor" onclick="ga('send', 'event', 'social', 'click', 'Dev.to');"
+                    <a href="https://dev.to/khaosdoctor"
+                      onclick="gtag('event', 'click', {'event_category': 'social', 'event_label': 'Dev.to'});"
                       target="_blank">
                       <i class="white fab fa-lg fa-dev"></i></a>
                   </div>
@@ -350,8 +368,8 @@
                 <div class="title">R$29,90</div>
                 <div class="description gray">.pdf, .epub e .mobi</div>
                 <a href="https://www.casadocodigo.com.br/products/livro-kubernetes"
-                  onclick="ga('send', 'event', 'buy', 'click', 'Pricing Ebook', 29.9);" target="_blank"
-                  class="neutral-link">Quero esse!</a>
+                  onclick="gtag('event', 'click', {'event_category': 'purchase', 'event_label': 'Pricing Ebook', 'currency': 'BRL', 'value': 29.9});"
+                  target="_blank" class="neutral-link">Quero esse!</a>
               </div>
             </div>
             <div class="col">
@@ -363,8 +381,8 @@
                 <div class="title">R$69,90 + frete</div>
                 <div class="description gray">Aquele cheirinho de livro novo...</div>
                 <a href="https://www.casadocodigo.com.br/products/livro-kubernetes"
-                  onclick="ga('send', 'event', 'buy', 'click', 'Pricing Printed', 69.9);" target="_blank"
-                  class="neutral-link">Melhor! Quero esse!</a>
+                  onclick="gtag('event', 'click', {'event_category': 'purchase', 'event_label': 'Pricing Printed', 'currency': 'BRL', 'value': 69.9});"
+                  target="_blank" class="neutral-link">Melhor! Quero esse!</a>
               </div>
             </div>
             <div class="col">
@@ -376,8 +394,8 @@
                 <div class="title">R$79,90 + frete</div>
                 <div class="description gray">Pra ler em qualquer lugar!</div>
                 <a href="https://www.casadocodigo.com.br/products/livro-kubernetes"
-                  onclick="ga('send', 'event', 'buy', 'click', 'Pricing Combo', 79.9);" target="_blank"
-                  class="neutral-link">Ah não! Eu quero é esse!</a>
+                  onclick="gtag('event', 'click', {'event_category': 'purchase', 'event_label': 'Pricing Combo', 'currency': 'BRL', 'value': 79.9});"
+                  target="_blank" class="neutral-link">Ah não! Eu quero é esse!</a>
               </div>
             </div>
           </div>
@@ -399,7 +417,8 @@
             </div>
             <div class="space md"></div>
             <a href="https://www.casadocodigo.com.br/products/livro-kubernetes"
-              onclick="ga('send', 'event', 'buy', 'click', 'Footer');" target="_blank">
+              onclick="gtag('event', 'click', {'event_category': 'purchase', 'event_label': 'Footer'});"
+              target="_blank">
               <div class="button blue">
                 Comprar
               </div>
@@ -419,27 +438,33 @@
         <div class="menu-options">
           <ul>
             <li><a data-scroll href="#resume"
-                onclick="ga('send', 'event', 'navigation', 'click', 'Sinopse - Footer');">Sinopse</a></li>
+                onclick="gtag('event', 'click', {'event_category': 'navigation', 'event_label': 'Sinopse - Footer'});">Sinopse</a>
+            </li>
             <li><a data-scroll href="#about-me"
-                onclick="ga('send', 'event', 'navigation', 'click', 'Autor - Footer');">Autor</a></li>
+                onclick="gtag('event', 'click', {'event_category': 'navigation', 'event_label': 'Autor - Footer'});">Autor</a>
+            </li>
             <li><a data-scroll href="#chapters"
-                onclick="ga('send', 'event', 'navigation', 'click', 'Capítulos - Footer');">Capítulos</a></li>
+                onclick="gtag('event', 'click', {'event_category': 'navigation', 'event_label': 'Capítulos - Footer'});">Capítulos</a>
+            </li>
             <li><a data-scroll href="#pricing"
-                onclick="ga('send', 'event', 'navigation', 'click', 'Preços - Footer');">Preços</a></li>
+                onclick="gtag('event', 'click', {'event_category': 'navigation', 'event_label': 'Preços - Footer'});">Preços</a>
+            </li>
           </ul>
         </div>
         <div class="social-icons">
           <ul>
             <!-- twitter -->
             <li>
-              <a target="_blank" onclick="ga('send', 'event', 'social', 'click', 'Twitter - Footer');"
+              <a target="_blank"
+                onclick="gtag('event', 'click', {'event_category': 'social', 'event_label': 'Twitter - Footer'});"
                 href="https://twitter.com/_staticvoid">
                 <i class=" black fab fa-twitter-square fa-2x"></i>
               </a>
             </li>
             <li>
               <!-- linkedin -->
-              <a target="_blank" onclick="ga('send', 'event', 'social', 'click', 'LinkedIn - Footer');"
+              <a target="_blank"
+                onclick="gtag('event', 'click', {'event_category': 'social', 'event_label': 'LinkedIn - Footer'});"
                 href="https://linkedin.com/in/lhs-santos">
                 <i class=" black fab fa-linkedin-square fa-2x"></i>
                 </svg>
@@ -448,7 +473,8 @@
 
             <li>
               <!-- facebook -->
-              <a target="_blank" onclick="ga('send', 'event', 'social', 'click', 'GitHub - Footer');"
+              <a target="_blank"
+                onclick="gtag('event', 'click', {'event_category': 'social', 'event_label': 'GitHub - Footer'});"
                 href="https://github.com/khaosdoctor">
                 <i class=" black fab fa-github-square fa-2x"></i>
               </a>
@@ -456,7 +482,8 @@
 
             <li>
               <!-- facebook -->
-              <a target="_blank" onclick="ga('send', 'event', 'social', 'click', 'Personal Site - Footer');"
+              <a target="_blank"
+                onclick="gtag('event', 'click', {'event_category': 'social', 'event_label': 'Personal Site - Footer'});"
                 href="https://lsantos.dev">
                 <i class=" black fas fa-link fa-2x"></i>
               </a>
@@ -467,7 +494,8 @@
     </div>
   </footer>
   <div class="copyright text-center">
-    Desenvolvido por: <b><a onclick="ga('send', 'event', 'referral', 'click', 'Lais - Footer');"
+    Desenvolvido por: <b><a
+        onclick="gtag('event', 'click', {'event_category': 'referral', 'event_label': 'Lais - Footer'});"
         href="https://twitter.com/laislima_dev" target="_blank">Laís Lima</a></b>
   </div>
   <!-- #Wrapper -->
